@@ -20,7 +20,7 @@
 <body>
 
     <!-- Section 1 -->
-    <nav id="mainNavbar" class="navbar-section">
+    <!-- <nav id="mainNavbar" class="navbar-section">
         <div class="nav-container">
 
             <div class="nav-left">
@@ -47,6 +47,34 @@
             </button>
 
         </div>
+    </nav> -->
+
+    <nav id="mainNavbar" class="navbar-section">
+        <div class="nav-container">
+
+            <div class="nav-left">
+                <a href="index.html" class="nav-brand">
+                    <img src="logoo.png" alt="Logo Strike Gear" class="nav-logo">
+                </a>
+            </div>
+
+            <div class="nav-center" id="navContent">
+                <a href="index.html">Home</a>
+                <a href="team.html">Team</a>
+                <a href="kategori.html">Product</a>
+                <a href="#">Contact</a>
+                <a href="#"
+                    onclick="document.getElementById('aiChatbox').classList.toggle('active'); return false;">Chatbox</a>
+            </div>
+
+            <a href="keranjang.html" class="nav-icon" title="Keranjang">🛒</a>
+            <a href="login.html" class="btn-login">Login</a>
+
+            <button class="navbar-toggler" id="navToggler">
+                <i class="bi bi-list"></i>
+            </button>
+
+        </div>
     </nav>
 
 
@@ -59,7 +87,8 @@
         <div class="hero-text-overlay">
             <h3>Marketplace Alat Pancing</h3>
             <h1>Strike Gear</h1>
-            <p class="hero-sub">Temukan perlengkapan pancing terbaik untuk setiap petualangan. Dari joran hingga umpan, semua ada di sini.</p>
+            <p class="hero-sub">Temukan perlengkapan pancing terbaik untuk setiap petualangan. Dari joran hingga umpan,
+                semua ada di sini.</p>
             <a href="kategori.html" class="btn-shop">SHOP NOW</a>
         </div>
     </section>
@@ -180,6 +209,22 @@
             <span class="footer-copy">©Strike Gear 2026</span>
         </div>
     </footer>
+
+    <div id="aiChatbox" class="chatbox-sidebar">
+        <div class="chatbox-header">
+            <h5 class="m-0">Strike Gear ChatBox</h5>
+            <button onclick="toggleChat()" class="btn-close btn-close-white"></button>
+        </div>
+        <div id="chatBody" class="chatbox-body">
+            <div class="msg ai-msg">Halo! Ada yang bisa saya bantu seputar alat pancing? 🎣</div>
+        </div>
+        <div class="chatbox-footer">
+            <input type="text" id="userInput" class="form-control" placeholder="Ketik pertanyaan...">
+            <button onclick="sendMessage()" class="send-btn">
+                <i class="bi bi-send-fill"></i>
+            </button>
+        </div>
+    </div>
 
 </body>
 
